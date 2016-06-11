@@ -1,0 +1,7 @@
+﻿Singleton Pattern
+- It is a creational pattern that ensures a class has only one instance and provide a global point og access to it.
+- Simplest form of design pattern.
+- Involves a single class which is responsible to create an object while making sure that only single object gets created. 
+- The class provides a way to access its only object which can be accessed diurectly without need to instantiate the object of the class.
+
+

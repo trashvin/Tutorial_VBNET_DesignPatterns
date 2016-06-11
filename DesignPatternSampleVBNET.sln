@@ -1,0 +1,35 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "SingletonPattern", "SingletonPattern\SingletonPattern.vbproj", "{BF9762A0-CCDE-426C-8F71-8ED74F3F7DB5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{A6D33A5B-AA14-4883-9DEF-00DBD6204F9D}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\NuGet.Config = .nuget\NuGet.Config
+		.nuget\NuGet.exe = .nuget\NuGet.exe
+		.nuget\NuGet.targets = .nuget\NuGet.targets
+	EndProjectSection
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "FactoryPattern", "FactoryPattern\FactoryPattern.vbproj", "{0F9F2DE0-5607-458A-BAE6-5D58D98BC2AF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BF9762A0-CCDE-426C-8F71-8ED74F3F7DB5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BF9762A0-CCDE-426C-8F71-8ED74F3F7DB5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BF9762A0-CCDE-426C-8F71-8ED74F3F7DB5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BF9762A0-CCDE-426C-8F71-8ED74F3F7DB5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0F9F2DE0-5607-458A-BAE6-5D58D98BC2AF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0F9F2DE0-5607-458A-BAE6-5D58D98BC2AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0F9F2DE0-5607-458A-BAE6-5D58D98BC2AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0F9F2DE0-5607-458A-BAE6-5D58D98BC2AF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
