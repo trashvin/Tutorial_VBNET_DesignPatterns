@@ -18,7 +18,9 @@ Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "BridgePattern", "BridgePatt
 EndProject
 Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "DataProviderService", "DataProviderService\DataProviderService.vbproj", "{D96027DA-4B91-427D-966B-B197A441DE63}"
 EndProject
-Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "DataProviderTest", "DataProviderTest\DataProviderTest.vbproj", "{8A8BEF90-2C02-421C-BF51-93D80CAEB88F}"
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "SolutionTestPackage", "DataProviderTest\SolutionTestPackage.vbproj", "{8A8BEF90-2C02-421C-BF51-93D80CAEB88F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MVCPattern", "MVCPattern\MVCPattern.csproj", "{36071794-025B-46E1-A420-AEA121092F71}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -46,6 +48,10 @@ Global
 		{8A8BEF90-2C02-421C-BF51-93D80CAEB88F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8A8BEF90-2C02-421C-BF51-93D80CAEB88F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8A8BEF90-2C02-421C-BF51-93D80CAEB88F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{36071794-025B-46E1-A420-AEA121092F71}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{36071794-025B-46E1-A420-AEA121092F71}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{36071794-025B-46E1-A420-AEA121092F71}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{36071794-025B-46E1-A420-AEA121092F71}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

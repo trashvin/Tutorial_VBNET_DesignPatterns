@@ -1,0 +1,35 @@
+﻿@using MVCPattern.Models
+@model IEnumerable<MVCPattern.Models.UserModel>
+@{
+    ViewBag.Title = "List of Users";
+}
+
+<h2>List of Users</h2>
+<table>
+    <thead>
+        <tr>
+            <td width="100px">User ID</td>
+            <td width="250px">Full Name</td>
+            <td width="100px">Gender</td>
+            <td width="100px">Age</td>
+            <td width="200px">Actions</td>
+        </tr>
+    </thead>
+    @foreach (UserModel myUser in Model)
+    {
+        <tr>
+            <td>@myUser.UserID.ToString()</td>
+            <td>@myUser.FullName</td>
+            <td>@myUser.Gender</td>
+            <td>@myUser.Age.ToString()</td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { id = myUser.UserID }) |
+                @Html.ActionLink("Delete", "Delete", new { id = myUser.UserID })
+                
+            </td>
+        </tr>
+    }
+</table>
+<div>
+    @Html.ActionLink("Create New User", "Create")
+</div>
