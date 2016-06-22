@@ -1,0 +1,125 @@
+﻿<Window x:Class="MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:viewmodel="clr-namespace:MVVMPattern"
+    Title="MainWindow" Height="350" Width="700">
+    <StackPanel>
+        <TextBlock Text="Sample MVVM" FontSize="22" HorizontalAlignment="Center" />
+    <Grid >
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="100"/>
+            <ColumnDefinition Width="200"/>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <TextBlock Grid.Row="0" 
+                   Grid.Column="0" 
+                   Text="User ID" 
+                   HorizontalAlignment="Right"/>
+        <TextBox Grid.Row="0" 
+                 Grid.Column="1" 
+                 Width="100" 
+                 HorizontalAlignment="Center" 
+                 Text="{Binding SelectedUser.UserID, Mode=TwoWay}"
+                 IsEnabled="{Binding AddMode}"
+                 FocusManager.IsFocusScope="{Binding AddMode}"/>
+        <TextBlock Grid.Row="1" 
+                   Grid.Column="0" 
+                   Text="Full Name" 
+                   HorizontalAlignment="Right"/>
+        <TextBox Grid.Row="1" 
+                 Grid.Column="1" 
+                 Width="100" 
+                 HorizontalAlignment="Center" 
+                 Text="{Binding SelectedUser.FullName, Mode=TwoWay}"
+                 IsEnabled="{Binding EditMode}"/>
+        <TextBlock Grid.Row="2" 
+                   Grid.Column="0" 
+                   Text="Gender" 
+                   HorizontalAlignment="Right"/>
+        <TextBox Grid.Row="2" 
+                 Grid.Column="1" 
+                 Width="100" 
+                 HorizontalAlignment="Center" 
+                 Text="{Binding SelectedUser.Gender, Mode=TwoWay}"
+                 IsEnabled="{Binding Editable}"/>
+        <TextBlock Grid.Row="3" 
+                   Grid.Column="0" 
+                   Text="Age" 
+                   HorizontalAlignment="Right"/>
+        <TextBox Grid.Row="3" 
+                 Grid.Column="1" 
+                 Width="100" 
+                 HorizontalAlignment="Center" 
+                 Text="{Binding SelectedUser.Age, Mode=TwoWay}"
+                 IsEnabled="{Binding Editable}"/>
+        <TextBlock Grid.Row="4" 
+                   Grid.Column="0" 
+                   Text="Bracket" 
+                   HorizontalAlignment="Right"/>
+        <TextBox Grid.Row="4" 
+                 Grid.Column="1" 
+                 Width="100" 
+                 HorizontalAlignment="Center" 
+                 Text="{Binding SelectedUser.Bracket, Mode=TwoWay}"
+                 IsEnabled="{Binding Editable}"/>
+        <ListView ItemsSource="{Binding UsersList}" 
+                  SelectedItem="{Binding SelectedUser}"
+                  Grid.Row="6"
+                  Grid.Column="0"
+                  Width="500"
+                  Height="100" 
+                  Grid.ColumnSpan="4"
+                  Margin="0,20,0,109">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Header="User ID" 
+                                    DisplayMemberBinding="{Binding UserID}" Width="60"/>
+                    <GridViewColumn Header="Full Name" 
+                                    DisplayMemberBinding="{Binding FullName}" Width="150"/>
+                    <GridViewColumn Header="Gender" 
+                                    DisplayMemberBinding="{Binding Gender}" Width="60"/>
+                    <GridViewColumn Header="Age" 
+                                    DisplayMemberBinding="{Binding Age}" Width="60"/>
+                    <GridViewColumn Header="Bracket" 
+                                    DisplayMemberBinding="{Binding Bracket}" Width="60"/>
+                </GridView>
+            </ListView.View>
+        </ListView>
+        <Button Grid.Column="4"
+                Grid.Row="1"
+                Width="100"
+                Content="Add User" 
+                IsEnabled="{Binding CRUDAllowed}"
+                Command="{Binding SubmitCommand}"/>
+        <Button Grid.Column="4"
+                Grid.Row="2"
+                Width="100"
+                Content="Edit User" 
+                IsEnabled="{Binding CRUDAllowed}"
+                Command="{Binding EditCommand}"/>
+        <Button Grid.Column="4"
+                Grid.Row="3"
+                Width="100"
+                Content="Delete User" 
+                IsEnabled="{Binding CRUDAllowed}"
+                Command="{Binding DeleteCommand}"/>
+
+            <Button Grid.Column="4"
+                Grid.Row="4"
+                Width="100"
+                Content="Save" 
+                IsEnabled="{Binding SaveOnly}"
+                Command="{Binding SaveCommand}"/>
+
+        </Grid>
+    </StackPanel>
+</Window>
