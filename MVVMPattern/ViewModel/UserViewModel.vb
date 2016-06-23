@@ -26,8 +26,7 @@ Public Class UserViewModel
         EditMode = False
         AddMode = False
         Editable = False
-        CRUDAllowed = True
-        'NotifyPropertyChanged("UsersList")
+    
 
     End Sub
 
@@ -85,28 +84,6 @@ Public Class UserViewModel
         End Set
     End Property
 
-    Private _crudAllowed As Boolean
-    Public Property CRUDAllowed As Boolean
-        Get
-            Return _crudAllowed
-        End Get
-        Set(value As Boolean)
-            _crudAllowed = value
-            NotifyPropertyChanged("CRUDAllowed")
-        End Set
-    End Property
-
-    Private _saveOnly As Boolean
-    Public Property SaveOnly As Boolean
-        Get
-            Return _saveOnly
-        End Get
-        Set(value As Boolean)
-            _saveOnly = value
-            NotifyPropertyChanged("SaveOnly")
-        End Set
-    End Property
-
     Public Property SaveCommand As ICommand
         Get
             If (_saveCommand Is Nothing) Then
@@ -150,8 +127,7 @@ Public Class UserViewModel
         EditMode = True
         AddMode = False
         Editable = True
-        CRUDAllowed = False
-        SaveOnly = True
+      
     End Sub
 
     Private Sub Save()
@@ -162,7 +138,7 @@ Public Class UserViewModel
 
         EditMode = False
         AddMode = False
-        CRUDAllowed = True
+
     End Sub
 
     Private Sub Delete()

@@ -98,26 +98,22 @@
                 Grid.Row="1"
                 Width="100"
                 Content="Add User" 
-                IsEnabled="{Binding CRUDAllowed}"
                 Command="{Binding SubmitCommand}"/>
         <Button Grid.Column="4"
                 Grid.Row="2"
                 Width="100"
                 Content="Edit User" 
-                IsEnabled="{Binding CRUDAllowed}"
                 Command="{Binding EditCommand}"/>
         <Button Grid.Column="4"
                 Grid.Row="3"
                 Width="100"
                 Content="Delete User" 
-                IsEnabled="{Binding CRUDAllowed}"
                 Command="{Binding DeleteCommand}"/>
 
             <Button Grid.Column="4"
                 Grid.Row="4"
                 Width="100"
                 Content="Save" 
-                IsEnabled="{Binding SaveOnly}"
                 Command="{Binding SaveCommand}"/>
 
         </Grid>
