@@ -24,6 +24,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MVCPattern", "MVCPattern\MV
 EndProject
 Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "MVVMPattern", "MVVMPattern\MVVMPattern.vbproj", "{590C2AFF-EFA3-4000-AD17-722AE64CECE6}"
 EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "ObserverPattern", "ObserverPattern\ObserverPattern.vbproj", "{D7A384E8-1434-4F1C-AC57-907C8E920E4B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -58,6 +60,10 @@ Global
 		{590C2AFF-EFA3-4000-AD17-722AE64CECE6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{590C2AFF-EFA3-4000-AD17-722AE64CECE6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{590C2AFF-EFA3-4000-AD17-722AE64CECE6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D7A384E8-1434-4F1C-AC57-907C8E920E4B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D7A384E8-1434-4F1C-AC57-907C8E920E4B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D7A384E8-1434-4F1C-AC57-907C8E920E4B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D7A384E8-1434-4F1C-AC57-907C8E920E4B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

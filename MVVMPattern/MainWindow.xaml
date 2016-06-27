@@ -98,7 +98,7 @@
                 Grid.Row="1"
                 Width="100"
                 Content="Add User" 
-                Command="{Binding SubmitCommand}"/>
+                Command="{Binding AddCommand}"/>
         <Button Grid.Column="4"
                 Grid.Row="2"
                 Width="100"
