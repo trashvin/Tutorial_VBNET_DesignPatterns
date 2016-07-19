@@ -68,6 +68,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Model\Gender.vb" />
     <Compile Include="RelayCommand.vb" />
     <Compile Include="ViewModel\UserViewModel.vb" />
     <Page Include="MainWindow.xaml">
