@@ -6,3 +6,5 @@
 - Factory 
 - Bridge 
 
+Projects are purely console applications built using Visual Studio 2017
+
