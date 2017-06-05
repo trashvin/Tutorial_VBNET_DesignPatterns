@@ -1,4 +1,7 @@
 # Design Patterns
+
+![appveyor status](https://ci.appveyor.com/project/trashvin/designpatternsamplesforvbnet)
+
 ## A project used to illutrate different design patterns using the VB.Net language.
 
 - Singleton
