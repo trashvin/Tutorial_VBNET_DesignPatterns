@@ -1,6 +1,6 @@
 # Design Patterns
 
-![appveyor status](https://ci.appveyor.com/project/trashvin/designpatternsamplesforvbnet)
+![appveyor status](https://ci.appveyor.com/api/project/status/github/trashvin/designpatternsamplesforvbnet)
 
 ## A project used to illutrate different design patterns using the VB.Net language.
 
